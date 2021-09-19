@@ -1,0 +1,23 @@
+{
+	"name": "tantivy-win32-arm64-msvc",
+	"version": "0.0.0",
+	"author": "Mesteery <mestery@pm.me>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mesteery/tantivy.git"
+	},
+	"main": "tantivy.win32-arm64-msvc.node",
+	"engines": {
+		"node": ">= 10"
+	},
+	"os": [
+		"win32"
+	],
+	"cpu": [
+		"arm64"
+	],
+	"files": [
+		"tantivy.win32-arm64-msvc.node"
+	]
+}

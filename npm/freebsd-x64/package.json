@@ -1,0 +1,23 @@
+{
+	"name": "tantivy-freebsd-x64",
+	"main": "tantivy.freebsd-x64.node",
+	"version": "0.0.0",
+	"author": "Mesteery <mestery@pm.me>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mesteery/tantivy.git"
+	},
+	"engines": {
+		"node": ">= 10"
+	},
+	"os": [
+		"freebsd"
+	],
+	"cpu": [
+		"x64"
+	],
+	"files": [
+		"tantivy.freebsd-x64.node"
+	]
+}

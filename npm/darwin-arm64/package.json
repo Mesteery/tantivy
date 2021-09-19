@@ -1,0 +1,27 @@
+{
+	"name": "tantivy-darwin-arm64",
+	"version": "0.0.0",
+	"main": "tantivy.darwin-arm64.node",
+	"author": "Mesteery <mestery@pm.me>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mesteery/tantivy.git"
+	},
+	"engines": {
+		"node": ">= 10"
+	},
+	"homepage": "https://github.com/Mesteery/tantivy#readme",
+	"bugs": {
+		"url": "https://github.com/Mesteery/tantivy/issues"
+	},
+	"os": [
+		"darwin"
+	],
+	"cpu": [
+		"arm64"
+	],
+	"files": [
+		"tantivy.darwin-arm64.node"
+	]
+}

@@ -1,0 +1,84 @@
+{
+	"name": "tantivy",
+	"type": "module",
+	"version": "0.0.0",
+	"description": "",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"prettier": "@typescord/prettier-config",
+	"scripts": {
+		"artifacts": "napi artifacts",
+		"build": "napi build --platform --release",
+		"build:debug": "napi build --platform",
+		"prepublishOnly": "napi prepublish -t npm",
+		"version": "napi version",
+		"lint": "yarn eslint && yarn clippy",
+		"lint-fix": "yarn eslint-fix && yarn clippy-fix",
+		"eslint": "eslint . --ext js,ts",
+		"eslint-fix": "yarn lint --fix",
+		"clippy": "cargo clippy",
+		"clippy-fix": "cargo fix --clippy",
+		"format": "yarn prettier && yarn format-rs",
+		"prettier": "prettier . --write",
+		"format-rs": "cargo fmt",
+		"check-ts": "tsc"
+	},
+	"engines": {
+		"node": ">= 10"
+	},
+	"author": "Mesteery <mestery@pm.me>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mesteery/tantivy.git"
+	},
+	"homepage": "https://github.com/Mesteery/tantivy#readme",
+	"bugs": {
+		"url": "https://github.com/Mesteery/tantivy/issues"
+	},
+	"napi": {
+		"name": "tantivy",
+		"triples": {
+			"defaults": true,
+			"additional": [
+				"x86_64-unknown-linux-musl",
+				"aarch64-unknown-linux-gnu",
+				"i686-pc-windows-msvc",
+				"armv7-unknown-linux-gnueabihf",
+				"aarch64-apple-darwin",
+				"aarch64-linux-android",
+				"x86_64-unknown-freebsd",
+				"aarch64-unknown-linux-musl",
+				"aarch64-pc-windows-msvc"
+			]
+		}
+	},
+	"dependencies": {
+		"@node-rs/helper": "^1.0.0"
+	},
+	"devDependencies": {
+		"@napi-rs/cli": "^1.0.0",
+		"@types/node": "^16.9.3",
+		"@typescord/eslint-config": "^0.4.0",
+		"@typescord/prettier-config": "^0.1.2",
+		"@typescript-eslint/eslint-plugin": "^4.30.0",
+		"@typescript-eslint/parser": "^4.30.0",
+		"eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-import-resolver-node": "^0.3.6",
+		"eslint-plugin-import": "^2.24.2",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-simple-import-sort": "^7.0.0",
+		"eslint-plugin-sonarjs": "^0.10.0",
+		"eslint-plugin-unicorn": "^35.0.0",
+		"prettier": "^2.3.2",
+		"typescript": "^4.4.2"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"volta": {
+		"node": "16.9.0"
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"name": "tantivy-linux-x64-musl",
+	"version": "0.0.0",
+	"main": "tantivy.linux-x64-musl.node",
+	"author": "Mesteery <mestery@pm.me>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mesteery/tantivy.git"
+	},
+	"engines": {
+		"node": ">= 10"
+	},
+	"os": [
+		"linux"
+	],
+	"cpu": [
+		"x64"
+	],
+	"files": [
+		"tantivy.linux-x64-musl.node"
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"name": "tantivy-darwin-x64",
+	"version": "0.0.0",
+	"main": "tantivy.darwin-x64.node",
+	"author": "Mesteery <mestery@pm.me>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mesteery/tantivy.git"
+	},
+	"engines": {
+		"node": ">= 10"
+	},
+	"os": [
+		"darwin"
+	],
+	"cpu": [
+		"x64"
+	],
+	"files": [
+		"tantivy.darwin-x64.node"
+	]
+}
